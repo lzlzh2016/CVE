@@ -8,18 +8,11 @@ In the 404 error page, the wrong code was used, resulting in the existence of XS
 
 ##### Loophole code：
 
-`</style>`
-`</head>`
-`<body>`
-	`<div id="container">`
-		`<h1>404 Page Not Found</h1>`
-		`<p><?php echo $debugmsg; ?></p>`
-		`<p>您尝试访问的页面未找到!</p>`
-	`</div>`
-`</body>`
-`</html>`
+HongCMS_3.0.0_free\system\errors\404.php
 
+Sixtieth lines
 
+`<?php echo $debugmsg; ?>`
 
 ##### Reflected XSS PoC:
 
@@ -27,6 +20,6 @@ In the 404 error page, the wrong code was used, resulting in the existence of XS
 
 ##### Vulnerability trigger screenshot：
 
-![1](C:\Users\lizhonghua\Desktop\1.png)
+![1](https://github.com/lzlzh2016/CVE/blob/master/1.png)
 
 Note: the vulnerability will be exploited by malicious users.
